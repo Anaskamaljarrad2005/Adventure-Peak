@@ -698,7 +698,7 @@ body {
       border: 2px solid green;
       position: relative;
       overflow: hidden;
-      background-color: #22481610;  
+      background-color: #22481610;
 }
 
 .Packages-card-content {
@@ -1075,13 +1075,16 @@ body {
       text-decoration: none;
       color: #126814;
 }
-.Blog-card:hover .Blog-card-title{
+
+.Blog-card:hover .Blog-card-title {
       color: #000000;
 }
-.Blog-card:hover .Blog-card-text{
+
+.Blog-card:hover .Blog-card-text {
       color: #144918;
 }
-.Blog-card:hover .Blog-card-link{
+
+.Blog-card:hover .Blog-card-link {
       color: #000000;
 }
 
