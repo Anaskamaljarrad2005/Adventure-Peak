@@ -1,0 +1,1154 @@
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+body {
+      height: fit-content;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background-color: #e6f5ee;
+}
+
+.Home {
+      width: 100%;
+      height: 100vh;
+      background-image: url(../images/pixnio-2597x1458.jpeg);
+      background-size: cover;
+      position: relative;
+}
+
+.home-header {
+      width: 100%;
+      height: 60px;
+      background-color: #1a2e1a;
+      display: flex;
+      position: fixed;
+      top: 0;
+      z-index: 20;
+}
+
+.header-logo {
+      height: 130px;
+      width: 150px;
+      margin-top: -33px;
+}
+
+.header-search {
+      position: relative;
+}
+
+.search-box {
+      height: 30px;
+      width: 230px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 20px;
+      outline: none;
+      padding: 0 30px;
+}
+
+.search-icon {
+      position: absolute;
+      margin-top: 22px;
+      margin-left: 10px;
+}
+
+.header-list {
+      display: inline-block;
+      list-style: none;
+      margin-left: 380px;
+}
+
+.blog-icon {
+      margin-left: 10px;
+}
+
+.header-list li {
+      margin-top: 20px;
+      display: inline-block;
+      margin-right: 25px;
+      vertical-align: middle;
+      font-size: 16px;
+}
+
+.header-list li a {
+      text-decoration: none;
+      color: #a8c5a0;
+      position: relative;
+}
+
+.header-list li a:hover {
+      color: #e8f5e2;
+}
+
+.dropdown {
+      position: relative;
+}
+
+.dropdown-menu {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s, visibility 0.3s;
+      position: absolute;
+      margin-top: 10px;
+      background-color: #1a2e1a;
+      list-style: none;
+      border-radius: 7px;
+      border: 2px #a8c5a0 solid;
+      width: 140px;
+      padding-bottom: 15px;
+      padding-left: 5px;
+      z-index: 100;
+}
+
+.dropdown-menu li a {
+      display: block;
+      padding: 0 0 0 7px;
+      margin-top: 2px;
+      text-decoration: none;
+      font-size: 14px;
+      color: #a8c5a0;
+}
+
+.dropdown-menu li a:hover {
+      color: #e8f5e2;
+}
+
+.dropdown:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+}
+
+.header-list a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2.5px;
+      background-color: #a8c5a0;
+      transition: 0.4s;
+
+}
+
+.header-list a:hover::after {
+      width: 100%;
+      transition: 0.4s;
+}
+
+.home-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 900px;
+      transform: translate(-50%, -50%);
+      margin-top: 15px;
+      color: aliceblue;
+      text-align: center;
+}
+
+.home-center h1 {
+      font-size: 60px;
+}
+
+.center-p {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.3;
+      font-size: 18px;
+      opacity: 0.7;
+}
+
+.center-btn {
+      height: 40px;
+      width: 130px;
+      margin-left: 10px;
+      border-radius: 10px;
+      border: none;
+      font-size: 15px;
+      font-weight: bold;
+}
+
+.center-btn1 {
+      background-color: #436d36;
+      color: #e8f5e2;
+      border: 1px solid #e8f5e2;
+}
+
+.center-btn2 {
+      background-color: #e8f5e2;
+      color: #1a3318;
+      border: 1.5px solid #09350a;
+}
+
+.center-btn1:hover {
+      background-color: #20411b;
+      color: #ecf3e8;
+}
+
+.center-btn2:hover {
+      background-color: #2d5a27;
+      color: #e8f5e2;
+      border-color: #2d5a27;
+}
+
+.home-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.366);
+}
+
+/*---------------------------End of section 1------------------------- */
+
+.Discover-page {
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+      /* background-color: #ffffff; */
+}
+
+.Discover-title {
+      padding-top: 80px;
+      font-size: 40px;
+}
+
+.Discover-line {
+      width: 100px;
+      height: 4px;
+      margin: 10px auto;
+      border: none;
+      background-color: black;
+}
+
+.Discover-container {
+      width: 80%;
+      height: 220px;
+      margin: 80px auto;
+      display: flex;
+      justify-content: center;
+      gap: 115px;
+}
+
+.Discover-card {
+      width: 320px;
+      height: 100%;
+      border: 2px solid #2d5a27;
+      padding: 20px 0;
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+}
+
+.discover-icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: rgb(27, 135, 12);
+}
+
+.discover-card-title {
+      margin-bottom: 15px;
+      font-size: 25px;
+}
+
+.discover-card-text {
+      margin: 0 8px 30px;
+      color: rgb(74, 72, 72);
+}
+
+.discover-card-link {
+      text-decoration: none;
+      color: green;
+}
+
+.card-content {
+      position: absolute;
+      z-index: 10;
+}
+
+.Discover-card::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 0;
+      left: 0;
+      background-color: rgba(48, 140, 43, 0.536);
+      transition: 0.3s;
+      border-radius: 20px;
+}
+
+.Discover-card:hover::after {
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+}
+
+.Discover-card:hover .discover-icon {
+      color: rgb(6, 61, 19);
+}
+
+.Discover-card:hover .discover-card-title {
+      color: aliceblue;
+}
+
+.Discover-card:hover .discover-card-text {
+      color: black;
+}
+
+.Discover-card:hover .discover-card-link {
+      color: rgb(5, 56, 17);
+}
+
+/*---------------------------End of section 2------------------------ */
+
+.Destinations-page {
+      width: 100%;
+      height: 100vh;
+      background-color: #cee0ceba;
+      text-align: center;
+}
+
+.Destinations-title {
+      padding-top: 55px;
+      font-size: 40px;
+}
+
+.Destinations-line {
+      width: 100px;
+      height: 4px;
+      margin: 10px auto;
+      border: none;
+      background-color: black;
+}
+
+.Destinations-container1 {
+      width: 63%;
+      height: 200px;
+      margin: 50px auto 0;
+      display: flex;
+      gap: 35px;
+}
+
+.Destinations-card {
+      width: 300px;
+      height: 100%;
+      border-radius: 7px;
+      display: flex;
+}
+
+.Destinations-container2 {
+      width: 63%;
+      height: 200px;
+      margin: 35px auto 0;
+      display: flex;
+      gap: 35px;
+}
+
+.card1 {
+      background-image: url(https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80);
+      background-size: cover;
+}
+
+.card2 {
+      background-image: url(https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&q=80);
+      background-size: cover;
+}
+
+.card3 {
+      background-image: url(https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=800&q=80);
+      background-size: cover;
+}
+
+.card4 {
+      background-image: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80);
+      background-size: cover;
+}
+
+.card5 {
+      background-image: url(https://images.unsplash.com/photo-1491555103944-7c647fd857e6?w=800&q=80);
+      background-size: cover;
+}
+
+.card6 {
+      background-image: url(https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80);
+      background-size: cover;
+}
+
+.Destinations-Card-category {
+      font-size: 35px;
+      margin: 20px 0;
+      color: aliceblue;
+}
+
+.Destinations-Card-name {
+      font-size: 15px;
+      margin-bottom: 30px;
+      color: aliceblue;
+}
+
+.Destinations-Card-icon {
+      width: 45px;
+      height: 30px;
+      font-size: 20px;
+      padding-top: 5px;
+      border-radius: 6px;
+      color: rgb(9, 42, 9);
+      background-color: aliceblue;
+      border: 1.5px solid rgb(9, 42, 9);
+}
+
+.Destinations-Card-icon:hover {
+      color: aliceblue;
+      background-color: rgb(17, 85, 17);
+      border-color: aliceblue;
+}
+
+.Destinations-Card-Content {
+      visibility: hidden;
+}
+
+.Destinations-Card:hover .Destinations-Card-Content {
+      visibility: visible;
+}
+
+.Destinations-Card-overlay {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(2, 2, 2, 0.565);
+      border-radius: 7px;
+      visibility: hidden;
+}
+
+.Destinations-Card:hover .Destinations-Card-overlay {
+      visibility: visible;
+}
+
+/*---------------------------End of section 3------------------------- */
+
+.Offer-page {
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+}
+
+.Offer-title {
+      padding-top: 70px;
+      font-size: 40px;
+}
+
+.Offer-line {
+      width: 90px;
+      height: 4px;
+      margin: 10px auto;
+      border: none;
+      background-color: rgb(11, 82, 31);
+}
+
+.Offer-container1 {
+      width: 75%;
+      height: 200px;
+      margin: 25px auto;
+      display: flex;
+      gap: 120px;
+}
+
+.Offer-card {
+      width: 300px;
+      border-radius: 20px;
+      border: 1px green solid;
+      position: relative;
+      overflow: hidden;
+}
+
+.Offer-container2 {
+      width: 75%;
+      height: 200px;
+      margin: 50px auto 0;
+      display: flex;
+      gap: 120px;
+}
+
+.Offer-card-icon {
+      float: left;
+      font-size: 30px;
+      margin: 9px 4px 0 6px;
+      height: 100%;
+      color: rgba(23, 117, 84, 0.859);
+}
+
+.Offer-icon-card4 {
+      margin-top: 10px;
+}
+
+.Offer-card-content {
+      margin: 18px 10px 0 0;
+      text-align: left;
+}
+
+.Offer-card-title {
+      margin-bottom: 10px;
+}
+
+.Offer-card-text {
+      color: rgb(88, 89, 88);
+}
+
+.Offer-card-icon,
+.Offer-card-content {
+      z-index: 1;
+      position: relative;
+}
+
+.Offer-card::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 0;
+      left: 0;
+      background-color: rgba(48, 140, 43, 0.24);
+      z-index: 0;
+      transition: 0.3s;
+      border-radius: 20px;
+
+}
+
+.Offer-card:hover::after {
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+}
+
+.Offer-card:hover .Offer-card-icon {
+      color: rgb(26, 108, 26);
+}
+
+.Offer-card:hover .Offer-card-title {
+      color: rgb(15, 84, 15);
+}
+
+.Offer-card:hover .Offer-card-text {
+      color: rgb(0, 0, 0);
+}
+
+/*---------------------------End of section 4------------------------- */
+
+.Travel-page {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+}
+
+.Travel-content {
+      width: 560px;
+      height: 410px;
+      margin-left: 190px;
+      margin-top: 80px;
+}
+
+.Travel-title {
+      font-size: 40px;
+}
+
+.Travel-line {
+      width: 90px;
+      height: 3.5px;
+      margin-top: 10px;
+      border: none;
+      background-color: rgb(25, 161, 64);
+}
+
+.Travel-desc {
+      margin-top: 30px;
+      color: rgb(97, 97, 97);
+}
+
+.Travel-list {
+      margin-top: 50px;
+}
+
+.Travel-list-item {
+      margin-bottom: 30px;
+}
+
+.Travel-list-item-icon {
+      color: rgb(25, 161, 64);
+      margin-right: 5px;
+      font-size: 20px;
+}
+
+.Travel-image {
+      width: 350px;
+      height: 500px;
+      margin-left: 225px;
+      margin-top: 30px;
+}
+
+.Travel-img {
+      height: 450px;
+      width: 100%;
+      background-image: url(../images/pexels-andre-ulysses-de-salis-2100065-7824822.jpg);
+      background-size: cover;
+      border-radius: 5px;
+}
+
+.Travel-dots {
+      width: 22%;
+      height: 50px;
+      margin: auto;
+      padding-top: 10px;
+      display: flex;
+      gap: 15px;
+}
+
+.Travel-dot {
+      width: 15px;
+      height: 15px;
+      background-color: rgb(175, 181, 178);
+      border-radius: 50%;
+}
+
+.active {
+      background-color: rgb(9, 126, 15);
+}
+
+.Travel-dot:hover {
+      background-color: rgb(9, 126, 15);
+}
+
+/*---------------------------End of section 5------------------------- */
+
+.Stats-page {
+      position: relative;
+      background-image: url(../images/pexels-nexionly-1500224.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+}
+
+.Stats-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.521);
+      z-index: 1;
+}
+
+.Stats-container {
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 180px;
+      position: relative;
+      z-index: 10;
+}
+
+.Stats-item {
+      color: aliceblue;
+      text-align: center;
+}
+
+.Stats-icon {
+      font-size: 40px;
+      color: #c6e3b9;
+}
+
+.Stats-number {
+      margin-top: 15px;
+}
+
+/*---------------------------End of section 6------------------------- */
+
+.Packages-page {
+      width: 100%;
+      height: 800px;
+      text-align: center;
+}
+
+.Packages-title {
+      padding-top: 130px;
+      font-size: 40px;
+}
+
+.Packages-line {
+      width: 90px;
+      height: 3.5px;
+      margin: 10px auto;
+      border: none;
+      background-color: rgb(11, 82, 31);
+}
+
+.Packages-container {
+      width: 75%;
+      height: 380px;
+      margin: 50px auto;
+      display: flex;
+      gap: 60px;
+}
+
+.Packages-card {
+      width: 30%;
+      height: 100%;
+      border-radius: 10px;
+      border: 2px solid green;
+      position: relative;
+      overflow: hidden;
+      background-color: #22481610;  
+}
+
+.Packages-card-content {
+      position: relative;
+      z-index: 1;
+}
+
+.Packages-name {
+      margin-top: 40px;
+      color: #11160e;
+}
+
+.Packages-circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 20px auto 30px;
+      border: 2px solid rgb(15, 179, 15);
+}
+
+.Packages-amount {
+      margin-top: 14px;
+      font-size: 26px;
+}
+
+.Packages-duration {
+      margin-top: 10px;
+      font-size: 17px;
+}
+
+.Packages-list li {
+      list-style: none;
+      margin-bottom: 20px;
+}
+
+.Packages-btn {
+      width: 170px;
+      height: 30px;
+      background-color: #2d5a27;
+      color: #e8f5e2;
+      border: 1.5px solid #2d5a27;
+      border-radius: 10px;
+}
+
+.Packages-btn:hover {
+      background-color: #c6d7c5;
+      color: #000000;
+      border-color: #1a2e1a;
+}
+
+.Packages-card::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0;
+      top: 0;
+      left: 0;
+      background-color: #1975385e;
+      border-radius: 10px;
+      z-index: 0;
+      transition: 0.5s;
+}
+
+.Packages-card:hover::after {
+      height: 100%;
+      width: 100%;
+      transition: 0.5s;
+}
+
+.Packages-card:hover .Packages-circle {
+      border: 2px solid rgb(6, 73, 6);
+}
+
+.Packages-card:hover .Packages-name {
+      color: rgb(4, 76, 4);
+}
+
+/*---------------------------End of section 7------------------------- */
+
+.Guides-page {
+      position: relative;
+      background-image: url(../images/peter-robbins-pDZ38JxeQ4I-unsplash.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center
+}
+
+.Guides-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.441);
+      z-index: 1;
+}
+
+.Guides-container {
+      height: 400px;
+      width: 70%;
+      display: flex;
+      margin: auto;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      position: relative;
+      z-index: 10;
+}
+
+.Guides-card {
+      width: 450px;
+      color: aliceblue;
+}
+
+.Guides-card-head {
+      display: flex;
+}
+
+.Guides-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #25391f;
+}
+
+.Guides-img1 {
+      background-image: url(../images/ludovic-migneault-4uj3iZ5m084-unsplash.jpg);
+      background-size: cover;
+}
+
+.Guides-img2 {
+      background-image: url(../images/roman-_6whfYYGUWE-unsplash.jpg);
+      background-size: cover;
+}
+
+.Guides-info {
+      margin-top: 10px;
+      margin-left: 20px;
+}
+
+.Guides-role {
+      margin-top: 5px;
+      color: #a8c5a0;
+}
+
+.Guides-text {
+      margin-top: 20px;
+      color: rgb(255, 255, 255, 0.80);
+}
+
+/*---------------------------End of section 8------------------------- */
+
+.Team-page {
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+}
+
+.Team-title {
+      padding-top: 130px;
+      font-size: 40px;
+}
+
+.Team-line {
+      width: 90px;
+      height: 3.5px;
+      margin: 10px auto;
+      border: none;
+      background-color: rgb(11, 82, 31);
+}
+
+.Team-container {
+      width: 80%;
+      height: 360px;
+      display: flex;
+      margin: 60px auto;
+      gap: 60px;
+}
+
+.Team-card {
+      width: 367px;
+      height: 100%;
+      background-color: #16490b22;
+      border-radius: 10px;
+      position: relative;
+}
+
+.Team-img-wrapper {
+      width: 280px;
+      height: 220px;
+      margin: 20px auto;
+      border-radius: 5px;
+}
+
+.Team-card .Team-img {
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      border-radius: 5px;
+      background-color: #e6f5ee;
+}
+
+.Team-img1 {
+      background-image: url(../images/man-wearing-waistcoat-removebg-preview.png);
+}
+
+.Team-img2 {
+      background-image: url(../images/close-up-happy-man-with-white-t-shirt-removebg-preview.png);
+}
+
+.Team-img3 {
+      background-image: url(../images/portrait-smiling-man-standing-with-hands-crossed-gray-wall-removebg-preview.png);
+}
+
+.Team-overlay {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.495);
+      border-radius: 5px;
+      visibility: hidden;
+}
+
+.Team-social {
+      display: flex;
+      flex-direction: column;
+      width: 30px;
+      /* gap: 8px; */
+      float: right;
+      margin-right: 5px;
+      /* margin-top: 5px; */
+      font-size: 15px;
+}
+
+.Team-social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      background: rgba(255, 255, 255, 0.903);
+      border: 1.5px solid rgba(23, 127, 58, 0.941);
+      color: #063d09;
+      font-size: 15px;
+      text-decoration: none;
+      z-index: 10;
+}
+
+.Team-social a:hover {
+      background: #063d09;
+      color: rgba(255, 255, 255, 0.903);
+      border-color: #1f5b19;
+}
+
+.Team-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #1a2e1a;
+      margin-bottom: 15px;
+}
+
+.Team-role {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #4a7c59;
+}
+
+.Team-card:hover .Team-overlay {
+      visibility: visible;
+}
+
+.Team-card::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0;
+      top: 0;
+      left: 0;
+      background-color: #0c532547;
+      border-radius: 10px;
+      transition: 0.5s;
+}
+
+.Team-card:hover::after {
+      height: 100%;
+      width: 100%;
+      transition: 0.5s;
+}
+
+/*---------------------------End of section 9------------------------- */
+
+.Blog-page {
+      width: 100%;
+      height: 800px;
+      text-align: center;
+}
+
+.Blog-title {
+      padding-top: 90px;
+      font-size: 40px;
+}
+
+.Blog-line {
+      width: 90px;
+      height: 3.5px;
+      margin: 10px auto;
+      border: none;
+      background-color: rgb(9, 66, 25);
+}
+
+.Blog-container {
+      width: 80%;
+      height: 500px;
+      margin: 50px auto;
+      display: flex;
+      gap: 60px;
+}
+
+.Blog-card {
+      height: 100%;
+      width: 367px;
+      border-radius: 10px;
+      position: relative;
+      border: 2px solid green;
+      overflow: hidden;
+}
+
+.Blog-img {
+      width: 250px;
+      height: 250px;
+      background-color: #6c757d;
+      margin: 25px auto;
+      background-size: cover;
+      border-radius: 8px;
+}
+
+.Blog-img1 {
+      background-image: url(../images/thierry-lemaitre-hzWb1uP0GTU-unsplash.jpg);
+}
+
+.Blog-img2 {
+      background-image: url(../images/caspian-dahlstrom-eWk02cqfHE8-unsplash.jpg);
+}
+
+.Blog-img3 {
+      background-image: url(../images/aurelien-thomas-lZUdkQwLxvE-unsplash.jpg);
+}
+
+.Blog-meta {
+      width: 300px;
+      margin-left: 23px;
+}
+
+.Blog-meta a {
+      margin-left: 20px;
+      color: #2d5a27;
+}
+
+.Blog-meta i {
+      margin-right: 5px;
+}
+
+.Blog-card-title {
+      margin: 10px 0 20px;
+      color: #137415;
+}
+
+.Blog-card-text {
+      margin-bottom: 30px;
+      color: #000000;
+}
+
+.Blog-card-link {
+      text-decoration: none;
+      color: #126814;
+}
+.Blog-card:hover .Blog-card-title{
+      color: #000000;
+}
+.Blog-card:hover .Blog-card-text{
+      color: #144918;
+}
+.Blog-card:hover .Blog-card-link{
+      color: #000000;
+}
+
+.Blog-card::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0;
+      top: 0;
+      left: 0;
+      background-color: #19753881;
+      border-radius: 10px;
+      z-index: -1;
+      transition: 0.5s;
+}
+
+.Blog-card:hover::after {
+      height: 100%;
+      width: 100%;
+      transition: 0.5s;
+}
+
+/*---------------------------End of section 10------------------------- */
+
+.Footer-page {
+      background-color: #284b28;
+      height: 320px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+}
+
+.Footer-img {
+      width: 220px;
+      height: 180px;
+      margin: 20px auto -10px;
+      border-radius: 15px;
+}
+
+.Footer-social {
+      margin: 0 auto -17px;
+      display: flex;
+      gap: 16px;
+}
+
+.Footer-social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: #4a7c59;
+      color: #ffffff;
+      font-size: 25px;
+      text-decoration: none;
+      transition: 0.5s;
+}
+
+.Footer-social a:hover {
+      background-color: #ffffff;
+      color: #1a2e1a;
+}
+
+.Footer-copy {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #8ab89a;
+}
