@@ -293,7 +293,7 @@ body {
 }
 
 .Discover-card:hover .discover-card-title {
-      color: aliceblue;
+      color: rgb(6, 61, 19);
 }
 
 .Discover-card:hover .discover-card-text {
@@ -655,7 +655,7 @@ body {
 
 .Stats-icon {
       font-size: 40px;
-      color: #c6e3b9;
+      color: #c4efb0;
 }
 
 .Stats-number {
