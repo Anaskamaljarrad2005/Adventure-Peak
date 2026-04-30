@@ -785,7 +785,7 @@ body {
 
 .Guides-page {
       position: relative;
-      background-image: url(../images/pexels-fabian-kessler-6229798-5967457.jpg);
+      background-image: url(../images/pexels-aziz-10122142.jpg);
       background-attachment: fixed;
       background-size: cover;
       background-position: center
@@ -828,12 +828,12 @@ body {
 }
 
 .Guides-img1 {
-      background-image: url(../images/ludovic-migneault-4uj3iZ5m084-unsplash.jpg);
+      background-image: url(../images/ludovic-migneault-4uj3iZ5m084-unsplash.jpg?w=1000&q=80);
       background-size: cover;
 }
 
 .Guides-img2 {
-      background-image: url(../images/roman-_6whfYYGUWE-unsplash.jpg);
+      background-image: url(../images/roman-_6whfYYGUWE-unsplash.jpg?w=1000&q=80);
       background-size: cover;
 }
 
